@@ -1,0 +1,17 @@
+{
+  "name": "lana-grace",
+  "version": "1.0.0",
+  "description": "Portfolio for Lana Grace",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "htmlhint *.html"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "live-server": "^1.2.2",
+    "standard": "^17.0.0",
+    "stylelint": "^14.11.0",
+    "surge": "^0.23.1"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drawings</title>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <line x1="100%" y1="50%" y2="50%" stroke="black">
+                    <animate attributeName="x2" values="100%;0%;" dur="500ms"/>
+                </line>
+            </svg>
+            <img id="logo" src="assets/logo_1x2.png" alt="Here is the alternate text">
+            <svg>
+                <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="black">
+                    <animate attributeName="x2" values="0%;100%;" dur="500ms"/>
+                </line>
+            </svg> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="/drawings.html">Drawings</a></li>
+            </ul>
+        </nav>
+      </header>
+
+    <main id="about">
+        <h1>About Me</h1>
+        <p>This is my about page</p>
+        <img src="assets/about/temp-headshot.png" alt="">
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin: 1em;">
+            <circle cx="50" cy="50" r="50"/>
+            <g>
+                <path d="M 30 25 C 30 25, 65 15, 75 25" stroke="white" fill="transparent"/>
+                <path d="M 25 25 C 45 0, 65 0, 75 25" stroke="white" fill="transparent"/>
+                <path d="M 25 25 C 45 45, 65 45, 75 25" stroke="white" fill="transparent"/>
+            </g>
+            <g transform="rotate(90, 0, 0) translate(0, -90)">
+                <path d="M 30 25 C 30 25, 65 15, 75 25" stroke="white" fill="transparent"/>
+                <path d="M 25 25 C 45 0, 65 0, 75 25" stroke="white" fill="transparent"/>
+                <path d="M 25 25 C 45 45, 65 45, 75 25" stroke="white" fill="transparent"/>
+            </g>
+        </svg>
+        <p>Bezier curve plant leaf failure</p>
+        <h2>Effective Social Media Strategy</h2>
+        <div class="card">
+            <p>Maintain an Active Social Media Presence</p>
+        </div>
+        <br>
+        <button>Submit</button>
+        <button>Cancel</button>
+    </main>
+    
+    <footer>This is the footer</footer>
+</body>
+</html>

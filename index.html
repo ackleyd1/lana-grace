@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="LG Designs" />
+  <meta property="og:description" content="Welcome to the simulation">
+  <title>LG Designs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '637236774407285',
+        xfbml      : true,
+        version    : 'v14.0'
+      });
+      FB.AppEvents.logPageView();
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <header>
+    <div id="banner">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="black"/>
+        </svg>
+        <img id="logo" src="assets/logo_1x2.png" alt="Here is the alternate text">
+        <svg>
+            <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="black"/>
+        </svg> 
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="drawings.html">Drawings</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <p>Here are my really cool projects</p>
+
+    <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+    <section>
+      <h2>Brand Strategies</h2>
+      <ul>
+        <li>Line Leap</li>
+        <li>Red Bull</li>
+        <li>DoorDash</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>SensiSkin</h2>
+      <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+
+    <section>
+      <h2>Influencing</h2>
+      <p></p>
+      <ul>
+        <li>GoPuff</li>
+        <li>NightCap</li>
+      </ul>
+      ambassadorship, photos, stories, analytics, timelines, payments
+    </section>
+  </main>
+
+  <footer>This is the footer</footer>
+</body>
+</html>

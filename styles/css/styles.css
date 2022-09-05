@@ -1,0 +1,162 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./ttf/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(./ttf/roboto-condensed/RobotoCondensed-Light.ttf);
+}
+
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./ttf/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSansCondensed;
+  src: url(./ttf/open-sans-condensed/OpenSans-CondLight.ttf);
+}
+
+@font-face {
+  font-family: Norwester;
+  src: url(./ttf/norwester/norwester.otf);
+}
+
+
+@font-face {
+  font-family: Selima;
+  src: url(./ttf/selima/Selima\ .ttf);
+}
+
+/* header font is norwester */
+
+:root {
+  --main-bg-color: #fface3;
+  --sec-bg-color: #bd91e4;
+  --main-bg-color-light: #fdc3e7;
+  --sec-bg-color-light: #d09ce6;
+  --main-bg-color-lighter: #ffdcf3;
+  --main-bg-color-transparent: #fdf8f8;
+}
+
+body {
+  font-family: OpenSans, sans-serif;
+}
+
+h1, h2 {
+  font-family: Selima;
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    width: 50%;
+    margin: auto;
+  }
+
+  header nav ul {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+#banner {
+  display: block;
+  text-align: center;
+}
+
+#banner img {
+  margin: 0 auto;
+}
+
+header nav {
+  text-align: center;
+  margin-top: 1em;;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header nav ul li a:hover {
+  color: var(--sec-bg-color);
+  border-bottom: 2px solid var(--main-bg-color);
+}
+
+
+
+#drawings {
+  padding: 0em 10em;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto;
+}
+
+#drawings img {
+  width: 12em;
+}
+
+#about img {
+  width: 50%;
+}
+
+#about {
+  background: var(--main-bg-color-lighter);
+  padding: 1em 2em;
+}
+
+footer {
+  background: var(--main-bg-color-transparent);
+}
+
+svg circle {
+  fill: var(--sec-bg-color);
+}
+
+#about h2 {
+  font-family: Norwester;
+}
+
+.card {
+  display: inline-block;
+  background: var(--sec-bg-color-light);
+  color: white;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 12px;
+  box-shadow: 4px 4px white, 8px 8px black;
+  margin-bottom: 1em;
+}
+
+button {
+  background: white;
+  padding: 8px;
+  box-shadow: 4px 4px inset black;
+  border: 0;
+}
+
+button:hover {
+  box-shadow: 3px 3px inset black;
+}
+
+button:active {
+  box-shadow: 1px 2px inset black;
+}

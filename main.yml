@@ -1,0 +1,18 @@
+# The name which appears in your GutHub Actions tab on GitHub
+name: Staging CI
+
+# The workflow is triggered when your repository is pushed to main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    # Job name is Greeting
+    name: Greeting
+    # The job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+  staging:
+    needs: [build]
