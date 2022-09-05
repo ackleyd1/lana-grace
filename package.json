@@ -5,11 +5,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "htmlhint *.html"
+    "lint": "htmlhint *.html",
+    "deploy": "surge --project . --domain lanagrace.surge.sh"
   },
   "devDependencies": {
     "htmlhint": "^1.1.4",
     "live-server": "^1.2.2",
+    "sass": "^1.54.8",
     "standard": "^17.0.0",
     "stylelint": "^14.11.0",
     "surge": "^0.23.1"
