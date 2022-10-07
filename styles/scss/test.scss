@@ -1,0 +1,11 @@
+.clicky {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #aaf;
+  border: 1px solid #555;
+  box-shadow: #000 0 0 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram Embed</title>
+        <link rel="stylesheet" href="css/insta.css">
+    </head>
+    <body>
+        <template id="posts">
+            <p>Example Post</p>
+        </template>
+        <my-post/>
+        <script>
+            customElements.define("my-post", class extends HTMLElement {
+                constructor() {
+                    super();
+
+                    let template = document.getElementById("posts");
+                    const shadowRoot = this.attachShadow({mode: "open"});
+                    shadowRoot.appendChild(template.content.cloneNode(true));
+                }
+            });
+        </script>
+    </body>
+</html>

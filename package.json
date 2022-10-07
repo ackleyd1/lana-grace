@@ -4,16 +4,26 @@
   "description": "Portfolio for Lana Grace",
   "main": "index.js",
   "license": "MIT",
+  "stylelint": {
+    "extends": "stylelint-config-standard-scss"
+  },
   "scripts": {
-    "lint": "htmlhint *.html",
+    "lint:html": "htmlhint *.html",
+    "lint:sass": "stylelint styles/scss/*.scss",
+    "lint:js": "standard --fix scripts/*.js",
+    "build:sass": "sass styles/scss:styles/css",
+    "build": "run-s lint:* build:sass",
     "deploy": "surge --project . --domain lanagrace.surge.sh"
   },
   "devDependencies": {
     "htmlhint": "^1.1.4",
     "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.54.8",
     "standard": "^17.0.0",
     "stylelint": "^14.11.0",
+    "stylelint-config-standard-scss": "^5.0.0",
     "surge": "^0.23.1"
-  }
+  },
+  "dependencies": {}
 }

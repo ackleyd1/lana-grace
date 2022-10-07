@@ -1,36 +1,8 @@
-@font-face {
-  font-family: Roboto;
-  src: url(./ttf/roboto/Roboto-Light.ttf);
-}
-
-@font-face {
-  font-family: RobotoCondensed;
-  src: url(./ttf/roboto-condensed/RobotoCondensed-Light.ttf);
-}
-
-
-@font-face {
-  font-family: OpenSans;
-  src: url(./ttf/open-sans/OpenSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: OpenSansCondensed;
-  src: url(./ttf/open-sans-condensed/OpenSans-CondLight.ttf);
-}
 
 @font-face {
   font-family: Norwester;
-  src: url(./ttf/norwester/norwester.otf);
+  src: url(fonts/norwester/norwester.otf);
 }
-
-
-@font-face {
-  font-family: Selima;
-  src: url(./ttf/selima/Selima\ .ttf);
-}
-
-/* header font is norwester */
 
 :root {
   --main-bg-color: #fface3;
@@ -131,7 +103,7 @@ svg circle {
   fill: var(--sec-bg-color);
 }
 
-#about h2 {
+h2 {
   font-family: Norwester;
 }
 
